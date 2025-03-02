@@ -1,7 +1,15 @@
 import java.util.Scanner;
 
 import static java.lang.Math.round;
+/*
+Crea una clase Rebajas, con atributos precio y precioRebajado (double ambos) y que tenga un metodo descubrePorcentaje() que descubra el descuento aplicado en un producto.
+El metodo recibe el precio original del producto y el rebajado y halla el porcentaje.
 
+double descubrePorcentaje(double precio, double PrecioRebajado)
+
+En la clase principal, solicitamos ambos precios (sin rebaja y con rebaja) y mostramos el porcentaje que ha sido aplicado
+Mostrar también el toString del objeto Rebajas
+ */
 public class Ejercicios_Pregunta2 {
     public static void main (String []args){
         Scanner entrada = new Scanner(System.in);
@@ -39,6 +47,5 @@ class Rebajas {
 
     public String descubrePorcentaje (){
         return String.format("El porcentaje aplicado al producto es: %.2f%%", porcentaje());
-
     }
 }

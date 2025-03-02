@@ -1,38 +1,37 @@
 import java.util.Scanner;
+/*
+Crea la clase Perro con los atributos
 
+Color. (char) Inicial (b=blanco y n= negro)
+Edad
+ */
 public class Ejercicios_Pregunta1 {
-    public static void main (String []args){
-        Scanner entrada = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-        String letra = entrada.next();
-        char letraInicialColor = letra.charAt(0);
-        int edad = entrada.nextInt();
-
-        Animal perro = new Animal(letraInicialColor, edad);
-        System.out.println(perro.informacionAnimal());
+        Perro perro = new Perro(scanner.next().charAt(0), scanner.nextInt());
+        System.out.println(perro);
     }
 }
-class Animal {
-
-    //Atributos
-    private char letra;
+class Perro {
+    private char color;
     private int edad;
 
-    //Constructor
-    public Animal (char color, int old){
-        this.edad = old;
-        this.letra = color;
+    Perro(char color, int edad) {
+        this.color = color;
+        this.edad = edad;
     }
 
-    public String queColor (char letraColor){
-        switch (letraColor){
+    public String queColor(char color){
+        switch (color){
             case 'b': return "Blanco";
             case 'n': return "Negro";
             default: return "Color no establecido";
         }
     }
 
-    public String informacionAnimal(){
-        return "Perro{color="+queColor(letra)+", edad="+edad+"}";
+    @Override
+    public String toString() {
+        return "Perro{color=" + queColor(color) + ", edad="+edad+"}";
     }
 }

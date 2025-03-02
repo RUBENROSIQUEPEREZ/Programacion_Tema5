@@ -1,7 +1,16 @@
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+/*
+Creamos la clase Paciente con los atributos Número Seguridad Social, nombre, edad, direccion
 
+Crea su constructor por defecto, y constructor con todos sus parámetros
+Crea sus metodos publicos para actualizar los valores de sus atributos, así como los métodos públicos para obtener sus valores
+Crea un método que devuelva un boolean en función de si es válido o no el NSS
+A partir de una clase principal crea un objeto Paciente(con constructor por defecto) y pide por teclado sus atributos para después mostrarlos por pantalla.
+Si el NSS es válido asignaremos dicho valor al atributo del objeto paciente
+Si el NSS no es válido, indicarlo
+ */
 public class Ejercicios_Pregunta3 {
     public static void main (String []args){
         Scanner entrada = new Scanner(System.in);
@@ -9,7 +18,7 @@ public class Ejercicios_Pregunta3 {
         String numSS = entrada.nextLine();
         String name = entrada.nextLine();
         String years = entrada.nextLine();
-        String direccion = entrada.nextLine(); //prueba
+        String direccion = entrada.nextLine();
 
         Paciente paciente1 = new Paciente(numSS, name, years, direccion);
         paciente1.mostrarInformacion();
@@ -46,7 +55,6 @@ class Paciente{
                             " dirección: " + direccion
             );
         }
-
     }
 
     private boolean numSegSocValido (String numeroSeguridadSocial){
@@ -54,6 +62,4 @@ class Paciente{
         Matcher matcher = pattern.matcher(numeroSeguridadSocial);
         return matcher.matches();
     }
-
-
 }
