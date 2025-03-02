@@ -9,7 +9,7 @@ public class Ejercicios_Pregunta3 {
         String numSS = entrada.nextLine();
         String name = entrada.nextLine();
         String years = entrada.nextLine();
-        String direccion = entrada.nextLine();
+        String direccion = entrada.nextLine(); //prueba
 
         Paciente paciente1 = new Paciente(numSS, name, years, direccion);
         paciente1.mostrarInformacion();
