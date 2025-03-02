@@ -23,7 +23,9 @@ public class Tareas_Pregunta1 {
         //Constructor de copia
         Cliente cliente3 = new Cliente(cliente2);
         System.out.println("C3: Nombre "+cliente3.getNombre()+", dirección: "+cliente3.getDireccion()+", email: "+cliente3.getEmail()+", edad: "+cliente3.getEdad());
+
     }
+
 }
 class Cliente {
     //Atributos que le damos a la clase
@@ -84,4 +86,21 @@ class Cliente {
     public int getEdad(){
         return edad;
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "nombre=" + nombre +
+                ", direccion=" + direccion +
+                ", email=" + email +
+                ", edad=" + edad +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+    if (obj == null || getClass() != obj.getClass()) return false;
+    Cliente cliente = (Cliente) obj;
+    return edad == cliente.edad && nombre.equals(cliente.nombre) && direccion.equals(cliente.direccion) && email.equals(cliente.email);}
 }

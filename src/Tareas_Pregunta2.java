@@ -1,5 +1,24 @@
 import java.util.Scanner;
-public class Tarea_Pregunta2 {
+/*
+Tenemos la siguiente clase Coche:
+
+class Coche{
+    private int velocidad;
+    Coche() {velocidad = 0;}
+}
+
+Añade a la clase Coche los siguientes métodos:
+
+int getVelocidad(). Devuelve la velocidad actual.
+void acelera (int mas). Actualiza la velocidad a mas km más.
+void frena (int menos). Actualiza la velocidad a menos km menos.
+
+
+Creamos una clase principal, donde solicitamos si desea acelerar o frenar (A o F) y cuantos km más.
+Cada caso de prueba empezará indicando un número, que indica el número de frenadas y aceleraciones totales.
+A continuación aparecerá una 'A' o una 'F', y en la línea siguiente el número de kms/h que se acelera o frena.
+ */
+public class Tareas_Pregunta2 {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner (System.in);
