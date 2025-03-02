@@ -1,5 +1,25 @@
 import java.util.Scanner;
 
+/*
+Crea una clase Fraccion (dividendo y divisor, como enteros) con métodos para sumar, restar, multiplicar y dividir fracciones. Además de los constructores (por defecto y con parámetros), así como los getters y setters y toString
+
+En la clase principal, pedirás por teclado los enteros para instanciar dos objetos Fraccion y mostraras por pantalla el resultado de la división, suma, resta y multiplicación
+suma:
+numerador = f1.numerador*f2denominador+f1.denominador*f2.numerador
+denominador = f1.denominador * f2.denominador
+
+resta:
+numerador=f1.numerador*f2.denominador-f1.denominador*f2.numerador;
+denominador=f1.denominador*f2.denominador;
+
+multiplicación:
+numerador= f1.numerador*f2.getNumerador();
+denominador=f1.denominador*f2.getDenominador();
+
+división:
+numerador = f1.numerador*f2.denominador;
+denominador = f1.denominador*f2.numerador;
+ */
 
 public class Ejercicios_Pregunta7 {
     static Scanner scanner = new Scanner(System.in);
@@ -17,7 +37,6 @@ public class Ejercicios_Pregunta7 {
         System.out.println("Suma " + fraccion1.sumar(fraccion2));
         System.out.println("Resta " + fraccion1.restar(fraccion2));
         System.out.println("Multiplicación " + fraccion1.multiplicar(fraccion2));
-
     }
 }
 class Fraccion{

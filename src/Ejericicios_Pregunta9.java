@@ -1,5 +1,13 @@
 import java.util.Scanner;
+/*
+Crea la clase Estudiante, con los siguientes atributos
 
+nombre
+dirección
+edad
+nre
+En la clase principal solicita por teclado dicha información y muestra sus datos con método toString de Estudiante
+ */
 public class Ejericicios_Pregunta9 {
     public static void main (String []args){
         Scanner scanner = new Scanner(System.in);

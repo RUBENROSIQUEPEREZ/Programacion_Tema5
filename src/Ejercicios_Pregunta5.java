@@ -1,3 +1,12 @@
+/*
+Crea una clase Empleado (dni, nombre, sueldo). La clase contendrá un atributo estático o atributo de clase  (numEmpleados)
+
+Constructor por defecto, setters y getters.
+
+Crear la clase principal, donde crearemos un empleado con constructor por defecto, y mostraremos el número de empleados.
+A continuación creamos otros dos empleados y volvemos a mostrar cuantos empleados hay
+*/
+
 public class Ejercicios_Pregunta5 {
     public static void main (String []args){
 
